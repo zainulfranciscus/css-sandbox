@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" type="text/css" href="common.css">
+<style>
+.box-set {
+  background: #eaeaed;
+}
+.box {
+  float: left;
+}
+/*clear fix*/
+.box-set:before,
+.box-set:after {
+  content: "";
+  display: table;
+}
+.box-set:after {
+  clear: both;
+}
+.box-set {
+  *zoom: 1;
+}
+</style>
+</head>
+<body>
+	<div class="box-set">
+	  <figure class="box">Box 1</figure>
+	  <figure class="box">Box 2</figure>
+	  <figure class="box">Box 3</figure>
+	</div>
+	<article>
+	   The clearfix technique involves creating a hidden elements above and below .box-set element.
+	</article>
+</body>
